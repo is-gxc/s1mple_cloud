@@ -101,8 +101,18 @@ class TcpSocket {
       return true;
     }
 
+    bool Send(const std::string &buf) {
+      int ret = send(_sockfd, &buf[0], buf.size(), 0);
+      if(ret < 0) {
+        std::cerr << "Send error\n";
+        return false;
+      }
+      return true;
+    }
+
     bool Close() {
       close(_sockfd);
+      return true;
     }
 
   private:
