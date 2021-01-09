@@ -98,6 +98,15 @@ class HttpRequest {
         _headers[key] = val;
       }
       //5.请求信息校验
+      //6.接收正文
+      auto it = _headers.find("Content-Length");
+      if(it != _headers.end()) {
+        std::stringstream tmp;
+        tmp << it->second;
+        int64_t file_len;
+        tmp >> file_len;
+        sock.Recv(_body, file_len);
+      }
 
       return 200;
 
