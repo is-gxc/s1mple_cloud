@@ -1,6 +1,11 @@
+#include <iostream>
+#include "http.hpp"
 #include "server.hpp"
-int main() {
-  Server srv;
-  srv.Start(9000);
-  return 0;
+using namespace std;
+
+int main()
+{
+    Server srv;
+    srv.Start(10001); 
+    return 0;
 }
