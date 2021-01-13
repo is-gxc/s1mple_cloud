@@ -1,0 +1,11 @@
+------WebKitFormBoundaryPdhaaCr08q474a6A
+Content-Disposition: form-data; name="fileupload"; filename="windows.txt"
+Content-Type: text/plain
+
+hello world
+
+------WebKitFormBoundaryPdhaaCr08q474a6A
+Content-Disposition: form-data; name="submit"
+
+&#25552;&#20132;
+------WebKitFormBoundaryPdhaaCr08q474a6A--
