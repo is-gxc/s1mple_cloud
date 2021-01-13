@@ -1,0 +1,48 @@
+<html>
+<head>
+	<style>
+ 		*{
+			margin : 0;
+		}
+		.main-window {
+			height : 100%; 
+			width : 80%; 
+			margin : 0 auto;
+		}
+		.upload{
+			position: relative; 
+			height:20%; width: 100%; 
+			background-color: #eb757dfb; 
+			text-align:center;
+		}
+        .listshow {
+			position : relative; 
+			height : 80%; width : 100%; 
+			background : #49b3dd;
+		}
+	    </style>
+	</head>
+​	<body>
+	<div class='main-window'>
+    <div class='upload'>
+    	<form action='/upload' method='post' enctype='multipart/form-data'>
+        	<div class='upload-btn'>
+        	<input type='file' name='fileupload'>
+        	<input type='submit' name='submit'>
+        	</div>
+		</form>
+	</div>
+	<hr />
+	<div class='listshow'>
+		<ol>
+        	<li>
+				<strong><a href='#'>filename</a><br /></strong>
+				<br /><small>modified: time</small>
+            	<br /> <small>filetype: application-octstream </small>
+			</li>
+		</ol>
+	</div>
+	<hr />
+	</div>
+	</body>
+</html>
